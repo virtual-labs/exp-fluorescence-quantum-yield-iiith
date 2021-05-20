@@ -1,0 +1,177 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../libraries/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mfs_expt8.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="../../libraries/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../../libraries/jQueryRotate.js"></script>
+    <script type="text/javascript" src="mfs_expt8.js"></script>
+    <script type="text/javascript" src="mfs8_animations.js"></script>
+    <title>Determination of Fluorescence Quantum Yield of a Fluorophore</title>
+</head>
+
+<body> 
+<!-- Body is divided into three rows -->
+<div class= "container">
+    <!-- First row consists of title of the experiment and the reset button -->
+    <div class= "row">
+        <div class="col-sm-12">
+            <h3>Determination of Fluorescence Quantum Yield of a Fluorophore</h3><br/> 
+            <button id="reset_btn" >Reset Experiment</button>
+        </div>  
+    </div>
+    <br/>
+
+    <!-- Second row consists of two columns with one column containing buttons ie manual and data and the other containing shelf with apparatus -->
+    <div class="row">
+        <div class="col-sm-6">
+        <!-- Manual image button displays the set of instructions to be followed to perform experiment
+        On clicking this button a box modal appears over the page n displays the instructions -->
+            <img id="manual_button" src="../../common_images/manual_button.png"><br/><br/>
+            <div id="manual" style = "z-index:1000" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times</span>
+                        <h2>Manual</h2>
+                    </div>
+
+                    <div class="modal-body" style="text-align:left">
+                        <ol>   
+                           <li> Prepare 1 × 10<sup>-5</sup>M solutions of rhodamine 6G and rhodamine B by dissolving them in spectroscopy grade ethanol. For the measurements here the solution concentrations are diluted such that the absorbance values at the excitation wavelength are below 0.05 (here 0.032 for both the solutions). This is required for avoiding the inner filter effects. Low concentrations are prepared via dilution of higher concentration stock solutions. Here the solutions are shown on a bar. </li>
+                            <li>Carry out the absorption and fluorescence measurements of the solutions as follows.</li>
+                            <li> To select a solution, click on the solution on the selection bar. First select rhodamine B solution. </li>
+                            <li> Click on the volumetric flask containing rhodamine B solution to take it to the instrument table. </li>
+                            <li>Click on the quartz cuvette (path length, 1 cm ×1 cm) to take it to the instrument table. Quartz cuvettes for spectrophotometric measurements are transparent only on two opposite sides, unlike the all-side transparent quartz cuvettes used for fluorescence measurements.</li>
+                            <li>Click on the 5 mL‑capacity pipette to collect 3 mL of the experimental solution which will be transferred into the quartz cuvette. In real operation, one has to set the volume to 3 mL in the pipette and an appropriate tip should be attached prior to dipping it in the solution.</li>
+                            <li>Click on the pipette to draw the solution into it.</li>
+                            <li>Click on the pipette to take it out of the volumetric flask.</li>
+                            <li>Click on the pipette again to transfer the solution into the cuvette.</li>
+                            <li>To start the absorption spectral scan, click on the pop-up “Start Absorption Measurement”.</li>
+                            <li>Turn on the spectrophotometer by clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.</li>
+                            <li>Open the lid of the sample chamber of the spectrophotometer by clicking on the lid for placing the sample in the cell-holder.</li>
+                            <li>Click on the cuvette to place it in the sample holder. One has to use pure solvent as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown.</li>
+                            <li>Close the chamber lid by clicking on it.</li>
+                            <li>Open the measurement set-up screen by clicking on the absorption measurement icon on the computer monitor.</li>
+                            <li>On the screen, enter the wavelength range. Start: 580 nm End: 460 nm. In real operation, the wavelength range of incident light for the sample is chosen and the wavelength scan is run via the accompanied computer software. One can run the scan in absorbance (A) or transmittance (%T) mode.</li>
+                            <li>Click on the green 'Start' button on the measurement set-up screen to run the wavelength scan. Observe the wavelength scan.</li>
+                            <li>Click on 'Close' button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data.</li>
+                            <li>To take the cuvette out of the sample chamber, first click on the sample chamber lid to open it and then on the cuvette.</li>
+                            <li>Close the sample chamber lid by clicking on it.</li>
+                            <li>Click on the pop-up: “Start Fluorescence measurement”.</li>
+                            <li>Turn on the spectrofluorimeter by clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.</li>
+                            <li>Click on the spectrophotometric quartz cuvette to transfer its content into an all-side-transparent quartz cuvette of path length 1 cm ×1 cm for the fluorescence measurement.</li>
+                            <li>Run the Emission Spectral Scan of the sample on a spectrofluorimeter as follows.</li>
+                            <li>For placing the sample in the instrument, open the lid of the sample chamber of the spectrofluorimeter by clicking on the lid.</li>
+                            <li>To place the cuvette in the sample holder, click on the cuvette.</li>
+                            <li>Close the lid of the sample chamber by clicking on the lid.</li>
+                            <li>Open the instrument set-up screen by clicking on the fluorescence measurement icon on the computer monitor.</li>
+                            <li>Select the Emission Scan Mode on the screen.</li>
+                            <li> On the screen, enter the Excitation wavelength: 535 nm, Emission Start Wavelength: 500 nm and Emission End wavelength: 680 nm. One chooses the Excitation Slit(nm) and Emission Slit(nm) values (here 2.5 nm/2.5 nm) and the scan speed value (here “medium”) also. </li>
+                            <li>To run the wavelength scan for emission spectrum, click on 'OK' button on the set-up screen. One has to be sure that the solvent blank does not fluoresce in the wavelength range of interest.</li>
+                            <li>Click on 'Close' button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data.</li>
+                            <li>To take the cuvette out of the sample chamber, first click on the sample chamber lid to open it and then on the cuvette.</li>
+                            <li>Close the lid of the sample chamber by clicking on the lid.</li>
+                            <li>Click on 'Reset' button to start over the measurements.</li>
+                            <li> Repeat the Absorption and Emission measurements with the reference sample, rhodamine 6G solution, by selecting it and then by clicking on the volumetric flask containing rhodamine 6G solution. For rhodamine 6G: On the absorption measurement screen, enter the wavelength range: Start: 580 nm; End: 440 nm. On the emission measurement screen, enter the Excitation wavelength: 535 nm, Emission Start Wavelength: 500 nm and Emission End wavelength: 680 nm. If one uses the same cuvettes, they should be first washed with the solvent and then rinsed with the experimental solutions prior to filling up the cuvette with the solution for measurements. </li>
+                            <li> Click on 'Reset' button to start over the measurements. </li>
+                            <li>Collect all data by clicking on the Data tab.</li>
+                            <li> Calculate the integrated fluorescence intensity from the fluorescence spectrum (i.e., determine the area under the two emission spectral curves). </li>
+                            <li> Determine the quantum yield of rhodamine B (Given: ΦF of rhodamine 6G = 0.95). </li>
+                            <li> Compare your experimentally determined quantum yield of rhodamine B with the literature value (ΦF= 0.70). </li>
+	                   </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Data image button displays the graphs obtained on plotting absorbance against wavelength for different sample path lengths
+            On clicking this button a new page displaying the graphs is opened  -->
+            <img id="data_button" src="../../common_images/data_button.png">
+
+            <div id = "conc_scale">
+                <img  id ="scale_image" src="images/scale_image.png" >
+                <input type="range" id="slider" min="0" max="1" step="1" value="0" autocomplete="off">
+            </div>
+
+        </div>
+
+
+        <div class="col-sm-6" id ="apparatus">
+            <img  id="shelf" src="../../common_images/shelf.png">
+            <img  id="round-bottom-flask"  src="../../common_images/empty-round-bottom-flask.png" >
+            <img  id = "solution_name" >
+            <img  id="pipette" src="../../common_images/pipette.png" >
+            <img  id="quartz_cuvette" src="../../common_images/quartz-cuvette.png" >
+            <img  id="cuvette" src="../../common_images/cuvette.png" > 
+        </div>
+    </div><br/><br/><br/>
+
+    <!-- Third row consists of table with various devices on it  -->
+    <div class="row">
+        <div class="col-sm-12" id="table">
+            <img  id = "table_with_spec" src="../../common_images/table_with_spec.png">
+            <img  id ="computerimage" src="../../common_images/computer.png">
+            <!-- button to scan the sample on the computer-->
+            <img  id ="comp_trans_button" src="../../common_images/vertical_button.png">
+            <!-- buttons to open and close the spectrophotometer lid -->
+            <img id ="spectrolid_trans_button" src="../../common_images/vertical_button.png">
+            <img id ="spectrolid_trans_button1" src="../../common_images/vertical_button.png">
+            <!-- reference cuvette -->
+            <img id = "reference" src = "../../common_images/reference.png" >
+            <img id = "ref_cuvette" >
+            <!-- text that shows the instructions to be followed next -->
+            <div id = "demo"></div>
+            <!-- button to switch on and switch off the spectrophotometer -->
+            <img id="power_trans_button" src="../../common_images/vertical_button.png">
+        </div>
+    </div>
+
+<!--absorbtion validation-->
+
+    <img id="clockScreen" src="../../common_images/clock.png">
+    <!-- Image of the hand of the clock -->
+    <img  id="clockHand"  src="../../common_images/hand.png">
+    <!-- Image of the greyed background displayed as a background while scanning the sample 
+    and also this image is shown as a popup screen to start the experiment -->
+    <img id="popup" src="../../common_images/transparent.png" >
+    <button id ="start" >Start Absorption measurement</button>
+    <!-- This image is used to enter the input values to display the graph1/graph2-->
+    <img id="input_form" class="data_validation" src="../../common_images/inputform1.png">
+    <!--Displays the graph by clicking on start button if the entered values are correct-->
+    <img id="start_btn" class="data_validation" src="../../common_images/vertical_button.png" >
+    <!--graph input values -->
+    <input id = "input1" class="data_validation" type="text" autocomplete="off">
+    <input id = "input2" class="data_validation" type="text" autocomplete="off">    
+    <!-- background image for the graphs instruction -->
+    <img id = "instruction_bkgd" class="common" src="images/graph_instruction.png">
+    <!-- graphs instructions are displayed here....-->
+    <div id = "graph_instruction" class="common"></div>
+    <!-- videos of the solutions concentrations--> 
+    <video id="video1" class="videos" ><source src="videos/graph1.mp4" type="video/mp4"></video>
+    <video id="video2" class="videos"><source src="videos/graph3.mp4" type="video/mp4"></video>
+    <!-- image to close the graph -->
+    <img id = "disposegraph" src="../../common_images/vertical_button.png">
+
+
+<!--fluoriscence validation-->
+
+    <!-- This image is used to enter the input values to display the graph1/graph2-->
+    <img id="input_data" class="data_validation1" src="../../common_images/mfs_form2.png">
+    <!--Displays the graph by clicking on ok button -->
+    <img id="ok_btn" class="data_validation1" src="../../common_images/vertical_button.png" >
+    <!-- dropdown box to select the graphs to display -->
+    <select id="select" class="data_validation1">
+          <option id="Excitation" value="Emission">Emission</option>
+          <option id="Emission" value="Excitation">Excitation</option>
+    </select> 
+    <!--graph input values -->
+    <input id = "input1_data" class="data_validation1" type="text" autocomplete="off">
+    <input id = "input2_data" class="data_validation1" type="text" autocomplete="off"> 
+    <input id = "input3_data" class="data_validation1" type="text" autocomplete="off">   
+    <!-- To display the videos on entering the correct input values -->
+    <video id="video3" class="videos" ><source src="videos/graph2.mp4" type="video/mp4"></video>
+    <video id="video4" class="videos" ><source src="videos/graph4.mp4" type="video/mp4"></video>
+</div>
+</body>
+</html>
