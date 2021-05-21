@@ -2,7 +2,7 @@
 
 - M. M. Martin and L. Lindqvist, The pH Dependence of Fluorescein Fluorescence, Journal of Luminescence 1975, 10, 381.
 
-- S. A. Barghouthi, J. Perrault and L. H. Holmes, Effect of Solvents on The Fluorescence Emission Spectra of 1-Anilino-8-Naphthalene Sulfonic Acid: A Physical Chemistry Experiment, Jr. The Chemical Educator, 1/Vol. 3, No. 5, http://journals.springer-ny.com/Chedr, © 1998 Springer-Verlag New York, Inc.
+- S. A. Barghouthi, J. Perrault and L. H. Holmes, Effect of Solvents on The Fluorescence Emission Spectra of 1-Anilino-8-Naphthalene Sulfonic Acid: A Physical Chemistry Experiment, Jr. The Chemical Educator, 1/Vol. 3, No. 5, http://journals.springer-ny.com/Chedr, &#169; 1998 Springer-Verlag New York, Inc.
 
 - A. T. Rhys Williams, S. A. Winfield and J. N. Miller, Analyst, 1983, 108, 1067.
 
