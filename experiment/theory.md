@@ -1,4 +1,4 @@
-The fluorescence quantum yield (&#966;<sub>F</sub>) of a species is the measure of its fluorescence efficiency. After absorption of photons, a molecule may get de-excited via different competitive processes, including fluorescence. The fluorescence quantum yield (&#966;<sub>F</sub>) of a molecule can therefore be measured by the ratio of the excited molecules that return to the ground state (S<sub>1</sub>&#8594;S<sub>0</sub> transition) with emission of photon to the total number of the excited molecules per unit of time and volume. If kr is the fluorescence (radiative) rate constant and &#931;k is the sum of the rate constants that depopulate the S<sub>1</sub> state (= k<sub>r</sub> + k<sub>ic</sub> + k<sub>isc</sub> + k<sub>q</sub> + k<sub>ec</sub> + k<sub>pd</sub> + k<sub>d</sub> +....., for all the processes like radiative process (fluorescence), internal conversion, intersystem crossing, quenching, external conversion, predissociation, and dissociation, etc. respectively), then the quantum yield (&#966;<sub>F</sub>) can be written as follows
+The fluorescence quantum yield (&#966;<sub>F</sub>) of a species is the measure of its fluorescence efficiency. After absorption of photons, a molecule may get de-excited via different competitive processes, including fluorescence. The fluorescence quantum yield (&#966;<sub>F</sub>) of a molecule can therefore be measured by the ratio of the excited molecules that return to the ground state (S<sub>1</sub>&#8594;S<sub>0</sub> transition) with emission of photon to the total number of the excited molecules per unit of time and volume. If kr is the fluorescence (radiative) rate constant and &#931;k is the sum of the rate constants that depopulate the S<sub>1</sub> state (= k<sub>r</sub> + k<sub>ic</sub> + k<sub>isc</sub> + k<sub>q</sub> + k<sub>ec</sub> + k<sub>pd</sub> + k<sub>d</sub> + ...., for all the processes like radiative process (fluorescence), internal conversion, intersystem crossing, quenching, external conversion, predissociation, and dissociation, etc. respectively), then the quantum yield (&#966;<sub>F</sub>) can be written as follows
 
 &#966;<sub>F</sub> =k<sub>r</sub> /&#931;k.......................... (1)
 
@@ -44,7 +44,7 @@ where the n's are the refractive indices of the solvents used for the two soluti
 
 If the absorbances of the sample and reference solutions are the same at the exciting wavelength, then
 
-&#966;<sub>F,X</sub> = &#966;<sub>F,R</sub> × [&#931;A<sub>X</sub> / &#931;A<sub>R</sub>] * [n<sub>X</sub> / n<sub>R</sub>]2	........................... (10)
+&#966;<sub>F,X</sub> = &#966;<sub>F,R</sub> * [&#931;A<sub>X</sub> / &#931;A<sub>R</sub>] * [n<sub>X</sub> / n<sub>R</sub>]2	........................... (10)
 
 The measured fluorescence quantum yield is the result obtained from a fluorescence spectrometric measurement when no corrections were made for instrumental response and sample effects.
 
