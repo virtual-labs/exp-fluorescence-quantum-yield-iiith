@@ -2,7 +2,7 @@
 
 1. If the intensities of the sample and reference beam are both the same, what is the value of absorbance?
 
-2. What is the % transmission for an absorbance of 1?
+2. What is the &#37; transmission for an absorbance of 1?
 
 3. What is the unit of the absorbance?
 
