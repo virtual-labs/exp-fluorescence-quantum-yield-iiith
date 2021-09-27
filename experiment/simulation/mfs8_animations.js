@@ -135,7 +135,7 @@ function moveCuvette(){
                             clearInterval(id);
                             if(sol_name == 0||sol_name ==1){
                                 elem.src="images/cuvette-with-sol.png";
-                                quartz.attr("src", "../../common_images/quartz-cuvette.png");
+                                quartz.attr("src", "common_images/quartz-cuvette.png");
                             }
                         }
                         $("#quartz_cuvette").rotate(angle);
@@ -184,7 +184,7 @@ function moveDown(){
 function extraCuvette(){
         /*Get the transparent image and replace it with a reference cuvette image and move it down into the
          spectrophotometer.*/
-        $('#ref_cuvette').attr('src', '../../common_images/quartz-cuvette.png'); 
+        $('#ref_cuvette').attr('src', 'common_images/quartz-cuvette.png'); 
         document.getElementById("reference").style.visibility ="visible";
         elem = document.getElementById("ref_cuvette"); 
         // Detect the current position of the flask.
@@ -261,7 +261,7 @@ function movePipette() {
         }
         else if(step_no == 5 && count == 5){
             if(sol_name == 0||sol_name == 1){
-                elem.src = "../../common_images/pipette.png";
+                elem.src = "common_images/pipette.png";
                 $("#quartz_cuvette").attr("src", "images/quartz-cuv-with-sol.png");
             }
             step_no ++;
@@ -313,8 +313,8 @@ function hideInstruction() {
        }
        else if( step_no == 17){
             $("#computerimage").remove();
-            images[0] = "../../common_images/spec_fluormeter.png";
-            images[1] = "../../common_images/spec_fluormeter.png";
+            images[0] = "common_images/spec_fluormeter.png";
+            images[1] = "common_images/spec_fluormeter.png";
             changeParameters();
             document.getElementById("demo").innerHTML = "Step-No 18: Turn on the spectrofluorimeter by clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument. ";
             step_no++;
