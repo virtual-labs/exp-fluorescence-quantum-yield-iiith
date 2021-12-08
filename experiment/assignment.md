@@ -8,7 +8,7 @@
 6. How are the absorbance and transmittance related at the spectral peak position?  
 
 
-####Post-Assignmnt
+#### Post-Assignmnt
 
 1. What kind of cuvettes (glass or quartz) will you use for a wavelength scan spanning the UV-visible range?  
 2. What do you expect if you run the wavelength scan by mistakenly placing the sample in the reference holder and the sample blank or reference in the sample holder?  
